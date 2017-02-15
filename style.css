@@ -1,0 +1,225 @@
+/*Ici vient votre code CSS*/
+@font-face { 
+    font-family: 'Open-sans';
+    src: url('font/OpenSans-Regular-webfont.eot');
+    src: url('font/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/OpenSans-Regular-webfont.woff') format('woff'),
+         url('font/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('font/OpenSans-Regular-webfont.svg#Open-sans') format('svg');
+}
+
+/* --------------------------------------------------GENERAL------------------------------------------ */
+
+body{
+	font-family: 'Open-sans';
+	margin:0;
+	padding:0;
+	color:#FFF;
+}
+
+h1{
+	display:inline-block;
+	padding:30px;
+	text-align: center;
+	font-size: 4em;
+	background-color: rgba(0,0,0,0.6);
+	color:white;
+	border: solid 2px #FFF;
+	border-radius: 50px;
+}
+
+h2{
+	display:inline-block;
+	padding:30px;
+	text-align: center;
+	font-size: 4em;
+	background-color: rgba(0,0,0,0.6);
+	color:white;
+	border: solid 2px #FFF;
+	border-radius: 50px;
+}
+
+section{
+	padding:30px;
+	min-height: 1000px;
+	text-align:center;
+	display: block;
+	background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    background-size: 100% 1000px;
+}
+
+section p{
+	display:inline-block;
+	padding:30px;
+	text-align: center;
+	font-size: 1em;
+	background-color: rgba(0,0,0,0.6);
+	color:white;
+	border: solid 1px #FFF;
+	border-radius: 50px;
+}
+
+section table{
+	display:inline-block;
+	padding:30px;
+	text-align: center;
+	font-size: 1em;
+	background-color: rgba(0,0,0,0.6);
+	color:white;
+	border: solid 1px #FFF;
+	border-radius: 50px;
+}
+
+/* ----------------------------------------------------MENU------------------------------------------------- */
+header{
+	background-color: #e44d26;
+	min-height: 70px;
+	height: auto;
+	width:100%;
+	padding-left:10px;
+	position: fixed;
+	top:0;
+	color:#FFF;
+	}
+
+header ul{
+	display : flex;
+	flex-direction: row;
+	justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+	}
+
+
+header ul li{
+	list-style:none;
+	display: block;
+	vertical-align:middle;
+	}
+
+#logo{
+	padding :10px;
+	margin-right: 15px;
+	text-decoration: none;
+	border : solid #FFF;
+	border-radius: 9px;
+	color:white;
+}
+
+.boutonmenu{
+	display:inline-block;
+	padding :10px;
+	margin-right: 15px;
+	text-decoration: none;
+	border-radius: 9px;
+	color:white;
+}
+
+.boutonmenu:hover{
+	background-color: white;
+	border-radius: 9px;
+	color:#e44d26;
+}
+
+
+/* ----------------------------------------------------Accueil----------------------------------------- */
+#accueil{
+	background-image: url(cv-bg-3.jpg);
+}
+
+#html5{
+	width: 180px;
+	height: auto;
+	margin:15px;
+}
+
+/* --------------------------------------------------Formation---------------------------------------- */
+#formation{
+	background-image: url(cv-bg-1.jpg);
+}
+
+
+
+/* -------------------------------------------------Travaux------------------------------------------- */
+#travaux{
+	background-image: url(cv-bg-4.jpg);
+}
+
+section table tr td a{
+	font-size: 3em;
+	text-decoration: none;
+	color:#e44d26;
+}
+
+th{
+	font-size: 2em;
+	padding:15px;
+	border-bottom: solid 1px #FFF;
+}
+
+td{
+	padding:15px 25px;
+	border-bottom: solid 1px #FFF;
+}
+
+.thumbnail{
+	max-width:250px;
+	height:auto;
+	border: dotted 1px #FFF;
+}
+
+
+/* -------------------------------------------------Contact------------------------------------------- */
+#contact{
+	background-image: url(cv-bg-2.jpg);
+}
+
+#contact form label{
+	cursor: pointer;
+}
+
+.checkbox input{
+	display:none;
+}
+
+.checkbox span{
+	float:left;
+	margin-left: 40px;
+	display:inline-block;
+	background-color: #FFF;
+	border :5px double #FFF;
+	width: 15px; height: 15px;
+	border-radius: 5px;
+	vertical-align: middle;
+}
+
+input:checked + span{
+	background-color: #e44d26;
+}
+
+/* ------------------------------------------------RESPONSIVE---------------------------------------- */
+
+@media all and (min-width:601px){
+	header ul{
+		flex-direction: row;
+	}
+
+	h1{
+		margin-top:150px;
+	}
+}
+
+
+@media all and (max-width:600px){
+	header ul{
+		flex-direction: column;
+	}
+
+	h1{
+		margin-top:300px;
+	}
+}
+

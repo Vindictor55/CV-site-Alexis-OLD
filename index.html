@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- https://github.com/tonytiratay/parcours-full-stack/blob/master/consignes/02-html-css/06%20-%20Suite%20HTML.md -->
+	  <!-- Vos fichiers d'entête ci dessous, pour lier style.css et ajouter la webfont 'Open Sans'-->
+	  <title>CV Alexis Langlois</title>
+	  <link rel="stylesheet" href="style.css" />
+	  <script type="text/javascript" src="index.js"></script>
+	</head>
+	<body>
+		<!-- Créer une navigation ici   -->
+		<header>
+			<ul>
+			<li><p id="logo">Alexis Langlois</p></li>
+			<li><a class="boutonmenu" href="#accueil">Accueil</a></li>
+			<li><a class="boutonmenu" href="#formation">Formation</a></li>
+			<li><a class="boutonmenu" href="#travaux">Travaux</a></li>
+			<li><a class="boutonmenu" href="#contact">Contact</a></li>
+			</ul>
+		</header>
+
+
+		<!-- Créer la section accueil ici   -->
+		<section id="accueil">
+			<h1>CV<br/>HTML<br/><img src="html5.jpg" id="html5"></h1>
+		</section>
+
+
+
+		<!-- Créer la section formation ici   -->
+		<section id="formation">
+			<h2>Formation</h2>
+		</section>
+
+
+
+		<!-- Créer la section travaux ici   -->
+		<section id="travaux">
+			<h2>Travaux</h2><br/><br/>
+
+			<table>
+				<tr>
+					<th>Titre</th>
+					<th>Vignette</th>
+					<th>Langages et Tech</th>
+					<th>Date</th>
+				</tr>
+				<tr>
+					<td><a href="http://www.alarmepro.fr/">AlarmePro</td>
+					<td><img class="thumbnail" src="AlarmePro_menu_0.png" alt="AlarmePro.fr"></td>
+					<td>HTML/CSS e-Monsite</td>
+					<td>Février à Juin 2016</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><img class="thumbnail" src="" alt=""></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><img class="thumbnail" src="" alt=""></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><img class="thumbnail" src="" alt=""></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+
+			</table>
+
+		</section>
+
+
+
+		<!-- Créer la section contact ici   -->
+		<section id="contact">
+			<h2>Contact</h2>
+				<form method="post" action="">
+					<p>Vous souhaitez me contacter ? C'est par ici !<br/><br/>
+
+					<label for="mail">Votre adresse e-mail : </label><br/><input required type="email" name="mail" id="mail" placeholder="xxx@aol.com"><br/><br/>
+
+
+					<label for="msg">Votre message : </label><br/><textarea required name="msg" id="msg" rows="10" cols="50" placeholder="Ceci est un message."></textarea><br/><br/>
+
+
+					<label class="checkbox">
+					<input type="checkbox" id="newsletter">S'abonner à ma NewsLetter ?
+					<span></span>
+					</label>
+					<br/><br/>
+
+
+					<input type="reset" value="On oublie tout.">
+					<input type="button" value="Envoyez !">
+					</p>
+				</form>
+		</section>
+	</body>
+</html>
